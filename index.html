@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ஸ்ரீராம் & காயத்ரி – திருமண அழைப்பிதழ் | Wedding Invitation</title>
+<meta name="description" content="Sriram & Gayathri wedding invitation – 22 November 2026, Vadavalli, Coimbatore.">
+<meta name="theme-color" content="#5a0f1a">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Noto+Serif+Tamil:wght@400;600;800&family=Tiro+Tamil&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+
+<!-- 1. LOADER -->
+<div id="loader" role="status" aria-label="Loading">
+  <div class="lamp"><i class="flame"></i><b class="bowl"></b><b class="stem"></b><b class="base"></b></div>
+  <h1 class="ta">திருமண அழைப்பிதழ்</h1>
+  <p>With the blessings of our beloved family...</p>
+</div>
+
+<!-- 2. DOORS -->
+<div id="doors" aria-hidden="true">
+  <div class="rays"></div>
+  <div class="door left"><span class="panel"></span><span class="panel"></span><span class="ring"></span></div>
+  <div class="door right"><span class="panel"></span><span class="panel"></span><span class="ring"></span></div>
+  <div class="bell">🔔</div>
+</div>
+
+<div id="fx" aria-hidden="true"></div>
+
+<button id="musicBtn" aria-label="Play or pause music" title="Music"><span class="bars"><i></i><i></i><i></i><i></i></span><span class="ico">♪</span></button>
+
+<header id="nav">
+  <a href="#home" class="brand ta" data-bind="monogram"></a>
+  <button id="burger" aria-label="Menu" aria-expanded="false"><i></i><i></i><i></i></button>
+  <nav id="menu">
+    <a href="#home">Home</a><a href="#couple">Couple</a><a href="#events">Events</a><a href="#story">Story</a><a href="#gallery">Gallery</a><a href="#venue">Venue</a><a href="#rsvp">RSVP</a>
+  </nav>
+</header>
+
+<main>
+<!-- 3. HERO -->
+<section id="home" class="hero">
+  <div class="frame">
+    <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+    <p class="ta om">ஓம் ஸ்ரீ கணேஷாய நம:</p>
+    <p class="ta ok">ஓம் முருகன் துணை</p>
+    <h2 class="ta title">திருமண அழைப்பிதழ்</h2>
+    <p class="lead">With the blessings of our parents and elders, we cordially invite you to celebrate the wedding of</p>
+    <div class="names">
+      <h3 class="ta" data-bind="groomNameTa"></h3>
+      <div class="amp">&amp;</div>
+      <h3 class="ta" data-bind="brideNameTa"></h3>
+    </div>
+    <p class="sub" data-bind="groomLine"></p>
+    <p class="sub" data-bind="brideLine"></p>
+    <div class="kolam"></div>
+    <p class="date ta" data-bind="dateTa"></p>
+    <p class="when" data-bind="whenLine"></p>
+    <p class="ta vn" data-bind="venueTa"></p>
+    <p class="addr" data-bind="venueAddress"></p>
+  </div>
+  <a href="#couple" class="scroll" aria-label="Scroll down">⌄</a>
+</section>
+
+<!-- 4. COUPLE -->
+<section id="couple" class="sec">
+  <h2 class="h ta">மணமக்கள்</h2>
+  <div class="cards two">
+    <article class="pcard rv l">
+      <div class="photo"><img src="assets/images/groom.jpg" alt="Groom" loading="lazy" onerror="ph(this,'GROOM PHOTO')"></div>
+      <h3 data-bind="groomName"></h3><p class="deg" data-bind="groomDegree"></p>
+      <p class="of">Son of</p><p class="par" data-bind="groomParents"></p>
+    </article>
+    <article class="pcard rv r">
+      <div class="photo"><img src="assets/images/bride.jpg" alt="Bride" loading="lazy" onerror="ph(this,'BRIDE PHOTO')"></div>
+      <h3 data-bind="brideName"></h3><p class="deg" data-bind="brideDegree"></p>
+      <p class="of">Daughter of</p><p class="par" data-bind="brideParents"></p>
+    </article>
+  </div>
+</section>
+
+<!-- 5. EVENTS -->
+<section id="events" class="sec dark">
+  <h2 class="h ta">நிகழ்வுகள்</h2>
+  <div class="cards four" id="eventCards"></div>
+  <!-- 6. COUNTDOWN -->
+  <div class="count rv">
+    <h3 class="ta">நம் சிறப்பு நாள்</h3><p class="ct">Our Special Day</p>
+    <div id="countdown" aria-live="off">
+      <div><b id="cd-d">00</b><span>Days</span></div><div><b id="cd-h">00</b><span>Hours</span></div>
+      <div><b id="cd-m">00</b><span>Minutes</span></div><div><b id="cd-s">00</b><span>Seconds</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. STORY -->
+<section id="story" class="sec">
+  <h2 class="h ta">Our Journey</h2>
+  <ol class="timeline" id="timeline"></ol>
+</section>
+
+<!-- 8. GALLERY -->
+<section id="gallery" class="sec dark">
+  <h2 class="h ta">நினைவுகள்</h2>
+  <div class="masonry" id="galleryGrid"></div>
+</section>
+
+<!-- 9. VENUE -->
+<section id="venue" class="sec">
+  <h2 class="h ta">திருமண மண்டபம்</h2>
+  <div class="vbox rv">
+    <div class="pin">📍</div>
+    <h3 class="ta" data-bind="venueTa"></h3>
+    <p class="vsub" data-bind="venueName"></p>
+    <p data-bind="venueAddress"></p>
+    <p class="bus ta" data-bind="busNote"></p>
+    <a class="btn" id="mapBtn" target="_blank" rel="noopener">View Location</a>
+  </div>
+</section>
+
+<!-- 10. RSVP -->
+<section id="rsvp" class="sec dark">
+  <h2 class="h ta">இரு இல்ல இனிய அழைப்பு</h2>
+  <p class="lead rv">We would be delighted by your presence.</p>
+  <div class="btns rv">
+    <a class="btn" id="rsvpBtn" target="_blank" rel="noopener">RSVP Now</a>
+    <a class="btn ghost" id="callBtn">Call Us</a>
+    <a class="btn ghost" id="waBtn" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+  <p class="inv ta" data-bind="inviters"></p>
+  <footer>Made with love · <span data-bind="monogram"></span></footer>
+</section>
+</main>
+
+<div id="lightbox" hidden><button class="x" aria-label="Close">×</button><button class="pv" aria-label="Previous">‹</button><img alt=""><button class="nx" aria-label="Next">›</button></div>
+<audio id="bgm" loop preload="none" src="assets/music/wedding-music.mp3"></audio>
+<script src="script.js"></script>
+</body>
+</html>
